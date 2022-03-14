@@ -26,12 +26,16 @@ function sendEmail(){
       // Set scenario to current ticker value
       tickerNumberRng.setValue(i);
 
-      var ticker = ss.getRange("Ticker").getValue();
       var dayChange = ss.getRange("DayChange").getValue();
-      var dayChangeString = Utilities.formatString("%2.2f%", dayChange * 100);
-      var emailLine = ticker + ": " + dayChangeString + "\n";
 
-      messageString += emailLine;
+      if (dayChange < 0) {
+      
+        var ticker = ss.getRange("Ticker").getValue();
+        var dayChangeString = Utilities.formatString("%2.2f%", dayChange * 100);
+        var emailLine = ticker + ": " + dayChangeString + "\n";
+
+        messageString += emailLine;
+      }
     }
 
     // Top 5 rises
@@ -44,12 +48,16 @@ function sendEmail(){
       // Set scenario to current ticker value
       tickerNumberRng.setValue(i);
 
-      var ticker = ss.getRange("Ticker").getValue();
       var dayChange = ss.getRange("DayChange").getValue();
-      var dayChangeString = Utilities.formatString("%2.2f%", dayChange * 100);
-      var emailLine = ticker + ": " + dayChangeString + "\n";
 
-      messageString += emailLine;
+      if (dayChange > 0){
+      
+        var ticker = ss.getRange("Ticker").getValue();
+        var dayChangeString = Utilities.formatString("%2.2f%", dayChange * 100);
+        var emailLine = ticker + ": " + dayChangeString + "\n";
+
+        messageString += emailLine;
+      }
     }
     
     // Tickers that are < 10% from 52-week low
