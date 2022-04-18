@@ -1,5 +1,5 @@
 # gsheets-email
-Google Apps Script that interacts with Google Sheets that contains a stock watchlist and emails the addressee with daily statistics.
+Google Apps Script that interacts with Google Sheets and emails addressee with daily statistics of stock watchlist. These are "Top 5 Daily Losers", "Top 5 Daily Risers" and "% From 52-Week Low".
 
 ## Step 1
 
