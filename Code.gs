@@ -6,7 +6,7 @@ function sendEmail(){
   var totalTickers = ss.getRange("TotalTickers").getValue();
   var date = new Date();
   var day = date.getDay();
-  var dateString = Utilities.formatDate(date, "GMT + 1", "dd/MM/YY EEEE"); // e.g. 04/03/22 Friday for Sydney, Australia timezone
+  var dateString = Utilities.formatDate(date, "GMT + 10", "dd/MM/YY EEEE"); // e.g. 04/03/22 Friday for Sydney, Australia timezone (GMT + 10 hours)
 
   var subjectString = dateString + " [Watchlist Alert]"; // appends string to end of subject title which provides handle to filter alerts in Gmail
   var messageString = "";
