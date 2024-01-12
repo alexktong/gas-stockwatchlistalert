@@ -5,15 +5,18 @@ Current defined metrics are are "Top 5 Daily Losers", "Top 5 Daily Risers" and "
 
 ## Step 1
 
-Open `Watchlist.xlsx` with Google Sheets. It contains named ranges necessary to interact with the Google Apps Script.
+Open `Stock Watchlist.xlsx` with Google Sheets.
 
 ## Step 2
 
-In the script `Code.gs`, assign variable "emailAddress" to the email address of recipient.
+In the script `Code.gs`:
+
+* Assign variable "emailAddress" to the email address of the recipient.
+* Assign variable "timeZoneOffset" to the timezone of the recipient's location.
 
 ## Step 3
 
-For the script to run once daily, set a Trigger with following parameters:
+For the script to run *once daily*, set a Trigger with following parameters:
 
 **Which runs at deployment**: `Head`
 
