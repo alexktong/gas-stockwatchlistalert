@@ -1,5 +1,7 @@
-# gsheets-email
-Google Apps Script that interacts with Google Sheets and emails addressee with daily statistics of stock watchlist. These are "Top 5 Daily Losers", "Top 5 Daily Risers" and "% From 52-Week Low".
+# Objective
+Emails addressee with daily statistics of stocks on a watchlist. 
+
+Current defined metrics are are "Top 5 Daily Losers", "Top 5 Daily Risers" and "% From 52-Week Low".
 
 ## Step 1
 
