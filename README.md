@@ -1,5 +1,5 @@
 # Objective
-Emails addressee with daily statistics of stocks on a watchlist. 
+Emails addressee with daily statistics of stocks on a watchlist on weekdays only.
 
 Current defined metrics are are "Top 5 Daily Losers", "Top 5 Daily Risers" and "% From 52-Week Low".
 
@@ -22,5 +22,3 @@ For the script to run once daily, set a Trigger with following parameters:
 **Select type of time based trigger**: `Day timer` Enables choosing time of the day the script will run.
 
 **Select time of day**: `5pm to 6pm` The script will run between 5pm and 6pm daily.
-
-Even though the script is automatically run daily, you will only receilve daily email alert on **weekdays** because of the condition in the script `if (day >= 1 && day <= 5)`.
