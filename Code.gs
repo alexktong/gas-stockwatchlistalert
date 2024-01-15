@@ -1,7 +1,7 @@
 function sendEmail(){
 
-  var emailAddress = 'alexktong.92@gmail.com'; // Input email address of recipient
-  var timeZoneOffset = '+ 10' // Currently defined to align with timezone for Sydney, Australia
+  var emailAddress = 'XXXXXXXXXXXXXXXXXXXXXXXXXX'; // Input email address of recipient
+  var timeZoneOffset = '+ 10' // Input timezone for of recipient
   
   var ss = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Watchlist');
   var tickerNumberRng = ss.getRange('TickerNumber');
