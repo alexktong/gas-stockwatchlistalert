@@ -1,5 +1,5 @@
 # Objective
-Emails addressee with daily statistics of stocks on a watchlist on weekdays only.
+Emails addressee with daily statistics of select stocks compiled in a Google Sheet.
 
 Current defined metrics are are "Top 5 Daily Losers", "Top 5 Daily Risers" and "% From 52-Week Low".
 
